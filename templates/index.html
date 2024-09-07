@@ -94,7 +94,19 @@
         .future-features ul {
             padding-left: 20px;
             color: #adb5bd; /* Light gray */
+
+        
         }
+
+        .description {
+            font-size: 1rem;  /* Adjust font size */
+            line-height: 1.6; /* Increase line height for readability */
+            margin: 0 auto;   /* Center align text if the container is centered */
+            text-align: center; /* Center align text */
+            max-width: 600px;  /* Limit the width to prevent overly long lines */
+            padding: 0 1rem;  /* Add horizontal padding */
+        }
+
     </style>
 </head>
 <body>
@@ -106,15 +118,15 @@
 
     <div class="container">
         <img src="{{ url_for('static', filename='images/pod-talk-logo.png') }}" alt="Musify Logo" class="logo">
-
+    
         <h1>Musify</h1>
-        <h5>An Online Music Streaming Platform using Spotify Web API . No login required . Listen to your favourite song with just a click.</h5>
-
+        <h5 class="description">An Online Music Streaming Platform using Spotify Web API. No login required. Listen to your favorite song with just a click.</h5>
+    
         <form action="/search" method="post">
             <input type="text" name="search" placeholder="Search for your favorite artist" required>
             <button type="submit">Search</button>
         </form>
-
+    
         <div class="future-features">
             <h3>Coming Soon:</h3>
             <ul>
