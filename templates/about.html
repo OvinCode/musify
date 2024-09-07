@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Musify</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #212529; /* Black */
+            color: #28a745; /* Green */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        nav {
+            background-color: #28a745; /* Green */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 80px 20px 20px; /* Adjusted for fixed navbar */
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .logo {
+            max-width: 40%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            text-align: left;
+            background-color: #2c3034; /* Slightly lighter black */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .about-content p {
+            color: #adb5bd; /* Light gray */
+            line-height: 1.6;
+        }
+
+        .about-content a {
+            color: #28a745; /* Green */
+            text-decoration: none;
+        }
+
+        .about-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">About</a>
+    </nav>
+
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/pod-talk-logo.png') }}" alt="Musify Logo" class="logo">
+
+        <h1>About Musify</h1>
+
+        <div class="about-content">
+            <h2>Developer:</h2>
+            <p>Hello! I'm Abhinandan Bose, the developer behind Musify. I'm a backend software engineer passionate about creating efficient and user-friendly applications.</p>
+            
+            <h2>Project Details</h2>
+            <p>Musify is an online music streaming platform that leverages the Spotify Web API. This project showcases the power of modern web technologies combined with rich music data.</p>
+            
+            <h2>Technology Stack</h2>
+            <p>This project is built using:</p>
+            <ul>
+                <li>Backend: Python with Flask framework</li>
+                <li>Frontend: HTML, CSS</li>
+                <li>API: Spotify Web API</li>
+            </ul>
+            
+            <h2>Connect with Me</h2>
+            <p>You can find more of my projects and connect with me on GitHub:</p>
+            <p><a href="https://github.com/abhinandan-bose" target="_blank">https://github.com/abhinandan-bose</a></p>
+            <p><a href="https://github.com/abhinandan-bose" target="_blank">https://github.com/abhinandan-bose</a></p>
+            
+            <h2>Project Goals</h2>
+            <p>The aim of Musify is to provide a seamless music discovery experience while demonstrating the capabilities of Flask and Python in creating robust web applications. Future updates will include more features and improvements to enhance the user experience.</p>
+        </div>
+    </div>
+</body>
+</html>
