@@ -70,6 +70,7 @@
             {% for track in tracks %}
             <li class="track-item">
                 <h3 class="track-name">{{ track.name }}</h3>
+                <iframe src="https://open.spotify.com/embed/track/{{ track.id }}" allowtransparency="true" allow="encrypted-media"></iframe>
             </li>
             {% endfor %}
         </ul>
